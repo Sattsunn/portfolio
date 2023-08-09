@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="description" content="初portofolio" />
+        <!-- reset.css ress -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
+        <title>MyPortfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <h1 class="site-title">
+                <a href="#">Portofolio</a>
+            </h1>
+
+            <nav>
+                <ul id="text">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <div id="main">
+            <picture>
+                <!-- sumaaho -->
+                <source media="(max-width:600px)" srcset="./img/main-pc.jpg" />
+                <!-- pc -->
+                <img src="./img/main-pc.jpg" alt="" />
+            </picture>
+        </div>
+    </body>
+
+    <!-- about  -->
+    <section id="about" class="wrapper">
+        <h2 class="title">About</h2>
+        <ul>
+            <li>さっつん</li>
+            <li>名古屋大学情報学部</li>
+            <li>アプリ開発サークルjack所属</li>
+            <li>諸々勉強中</li>
+        </ul>
+    </section>
+</html>
