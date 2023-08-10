@@ -4,6 +4,7 @@ html {
 
 body {
     color: #24292e;
+    font-family: sawarabi-gothic, sans-serif;
 }
 
 a {
@@ -27,9 +28,10 @@ li {
     line-height: 1px;
     font-weight: 600;
     font-size: 2.4rem;
+    color: #24292e;
 }
 
-.site-tilte a {
+.site-title a {
     color: #24292e;
 }
 
@@ -74,6 +76,100 @@ li {
     opacity: 0.5;
 }
 
+/* main */
+#main img {
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* about */
+#about ul {
+    margin: 10px;
+}
+
+.sec-title {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+/* works */
+#works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#works ul li {
+    width: 31%;
+    margin-bottom: 20px;
+}
+
+#works ul li img {
+    cursor: pointer;
+    width: 640px;
+    max-height: 417px;
+    transition: all 0.3s;
+}
+
+#works ul li img:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 0.7;
+}
+
+/* contact */
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#contact dt {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+#contact dd {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+#contact dd input,
+#contact dd textarea {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    padding: 10px;
+}
+
+#contact dd textarea {
+    height: 10rem;
+}
+
+#contact .button {
+    text-align: center;
+}
+
+#contact .button input {
+    border: 1px solid #24292e;
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    transition: all 0.3s;
+}
+
+#contact .button input:hover {
+    background: #fff;
+    color: #24292e;
+}
+
 /* sp */
 @media screen and (max-width: 600px) {
     /* header */
@@ -87,14 +183,14 @@ li {
         font-size: 0.8rem;
         margin-left: 20px;
     }
+    /* contact */
+    #contact dl {
+        flex-direction: column;
+    }
+    #contact dt {
+        width: 100%;
+    }
+    #contact dd {
+        width: 100%;
+    }
 }
-
-/* main */
-#main img {
-    width: 100%;
-    max-width: 1920px;
-    height: 400px;
-    object-fit: cover;
-}
-
-/* about */

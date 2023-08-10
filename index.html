@@ -16,13 +16,13 @@
         <!-- Header -->
         <header id="header">
             <h1 class="site-title">
-                <a href="#">Portofolio</a>
+                <a href="#">さっつんPortfolio</a>
             </h1>
 
             <nav>
                 <ul id="text">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#about">Aboutm me</a></li>
+                    <li><a href="#works">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -41,12 +41,52 @@
 
     <!-- about  -->
     <section id="about" class="wrapper">
-        <h2 class="title">About</h2>
-        <ul>
+        <h2 class="sec-title">About me</h2>
+        <ul id="text">
             <li>さっつん</li>
             <li>名古屋大学情報学部</li>
             <li>アプリ開発サークルjack所属</li>
             <li>諸々勉強中</li>
+            <li>使える技術</li>
         </ul>
+    </section>
+
+    <!-- works -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+            <li><img src="./img/kanban_jyunbi.png" alt="" /></li>
+            <li><img src="./img/kanban_jyunbi.png" alt="" /></li>
+            <li><img src="./img/kanban_jyunbi.png" alt="" /></li>
+            <li><img src="./img/kanban_jyunbi.png" alt="" /></li>
+            <li><img src="./img/kanban_jyunbi.png" alt="" /></li>
+            <li><img src="./img/kanban_jyunbi.png" alt="" /></li>
+        </ul>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input
+                type="hidden"
+                name="accessKey"
+                value="004c425d-3484-430a-9ccd-733ee19a7ff4"
+            />
+            <input type="text" name="honeypot" style="display: none" />
+
+            <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name" name="name" /></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="text" id="email" name="email" /></dd>
+                <dt><label for="content">内容</label></dt>
+                <dd>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                </dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信" /></div>
+        </form>
     </section>
 </html>
